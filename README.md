@@ -30,23 +30,23 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub repo](https://github.com/ashea29/blog-preview-card-solution/tree/main)
-- Live Site URL: [https://tip-calculator-solution-ajs.netlify.app/](https://tip-calculator-solution-ajs.netlify.app/)
+- Live Site URL: [https://blog-preview-card-solution-ajs.netlify.app/](https://blog-preview-card-solution-ajs.netlify.app/)
 
 ## My process
 
 ### Built with
 
-- Vite (Vanilla JS)
+- Vite
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Sass mixins
+- Custom script to check accessibility (using [pa11y](https://github.com/pa11y/pa11y))
 
 ### What I learned
-In this challenge, I was able to get some more practice (always a good thing!) writing semantic HTML, as well as using the BEM naming convention for CSS classes.
+This challenge was mostly just a review and further practice of my skills. 
 
-Additionally, I was able to solidify a strategy I intend to use, going forward, for creating a maintainable light-theme/dark-theme toggle.
+One new thing I learned while working on this was how to refine my 'a11y' script in package.json so that I could pass the name of the challenge as an argument, and it could thus be added dynamically to the output HTML file.
 
 ## Author
 
