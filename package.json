@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "a11y": "concurrently \"pnpm dev\" \"node ./utils/pa11y/runA11yCheck.cjs\""
+    "a11y": "concurrently -P \"pnpm dev\" \"node ./utils/pa11y/runA11yCheck.cjs {@}\""
   },
   "devDependencies": {
     "@dotenvx/dotenvx": "latest",

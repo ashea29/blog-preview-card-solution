@@ -5,6 +5,9 @@ const { promisify } = require("util");
 const writeFile = promisify(fs.writeFile);
 const pa11y = require("pa11y");
 const { html, css, js } = require("./templates.cjs");
+const { argv } = require("process");
+
+const pageNameForReport = argv.slice(2).join(" ");
 
 async function runPa11y() {
   const results = await pa11y("http://localhost:5173", {
@@ -39,6 +42,7 @@ async function runPa11y() {
     warningCount,
     noticeCount,
     fixedCount,
+    pageNameForReport,
     escapeHtml
   );
 
@@ -142,7 +146,7 @@ async function runPa11y() {
           const { default: chalk } = await import("chalk");
           console.log(
             chalk.cyan(
-              "Accessibility report written to 'utils/pa11y/results/index.html' 🚀"
+              `Accessibility report for '${pageNameForReport}' written to 'utils/pa11y/results/index.html' 🚀`
             )
           );
         } catch (error) {
