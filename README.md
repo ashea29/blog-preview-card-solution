@@ -1,6 +1,6 @@
-# Frontend Mentor - Solution Template
+# Blog Preview Card
 
-This is my solution to the [[NAME] challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is my solution to the [Blog Preview Card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -17,26 +17,19 @@ This is my solution to the [[NAME] challenge on Frontend Mentor](https://www.fro
 
 ### The challenge
 
+This challenge was to build out a simple but stylish blog preview card.
+
 Users should be able to:
 
-- View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Calculate the correct tip and total cost of the bill per person
 
 ### Screenshot
-As an added challenge, I decided to create a theme toggle for this project. I added a separate set of color variables closely related to those for the default theme, and a button to switch between themes:
 
-**Light Theme**
-
-![Light theme screenshot](./light-theme-screenshot.png)
-
-**Dark Theme**
-
-![Dark theme screenshot](./dark-theme-screenshot.png)
+![Screenshot of solution](./project-screenshot.png)
 
 ### Links
 
-- Solution URL: [GitHub repo](https://your-solution-url.com)
+- Solution URL: [GitHub repo](https://github.com/ashea29/blog-preview-card-solution/tree/main)
 - Live Site URL: [https://tip-calculator-solution-ajs.netlify.app/](https://tip-calculator-solution-ajs.netlify.app/)
 
 ## My process
