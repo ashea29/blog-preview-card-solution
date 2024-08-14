@@ -1,32 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend Mentor - Solution Template</title>
+    <title>Blog Preview Card Solution - AJS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="style.scss" />
   </head>
   <body>
     <div class="container">
       <header class="header">
-        <div class="theme-toggle">
-          <img src="./images/dark-theme-icon.svg" alt="Theme toggle">
-        </div>
+        <h1 class="sr-only">Blog Preview Card Solution - AJS</h1>
       </header>
       <main class="main">
-        <section >
-          <h1>Frontend Mentor - Solution Template</h1>
-        </section>
+        <div class="card">
+          <div class="card__blog-img">
+            <img
+              src="images/illustration-article.svg"
+              alt="Blog illustration depicting code symbols"
+            />
+          </div>
+          <div class="card__content">
+            <div class="card__category" aria-label="Blog category badge">
+              <div class="card__category__text">Learning</div>
+            </div>
+            <div class="card__publish-date" aria-label="Blog publish date">
+              Published 21 Dec 2023
+            </div>
+            <h2 class="card__title" aria-label="Blog title">
+              HTML &amp; CSS foundations
+            </h2>
+            <div class="card__description">
+              These languages are the backbone of every website, defining
+              structure, content, and presentation.
+            </div>
+          </div>
+          <div class="card__author">
+            <img
+              class="card__author__img"
+              src="images/image-avatar.webp"
+              alt="Blog author avatar image"
+            />
+            <div class="card__author__name" aria-label="Blog author name">
+              Greg Hooper
+            </div>
+          </div>
+        </div>
       </main>
     </div>
-    
+
     <script type="module" src="script.js"></script>
   </body>
 </html>
