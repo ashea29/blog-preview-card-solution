@@ -5,6 +5,7 @@ const html = (
   warningCount,
   noticeCount,
   fixedCount,
+  pageNameForReport,
   escapeHtml
 ) =>
   `
@@ -13,12 +14,12 @@ const html = (
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Accessibility Report For "QR Code Component"</title>
+      <title>Accessibility Report For "${pageNameForReport}"</title>
       <link rel="stylesheet" href="style.css" />
     </head>
     <body>
       <main class="page">
-        <h1 class="page__heading">Accessibility Report For "QR Code Component"</h1>
+        <h1 class="page__heading">Accessibility Report For "${pageNameForReport}"</h1>
         <h2 class="page__subheading">Generated: ${new Date().toLocaleString()}</h2>
 
         <p class="counts">
