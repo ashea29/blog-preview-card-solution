@@ -117,7 +117,6 @@ body {
   @include flex-column-center;
   min-height: 100vh;
   gap: var(--space-2-5);
-  margin-top: var(--space-3);
 }
 
 .main {
@@ -141,10 +140,11 @@ body {
   max-width: 384px;
   min-width: 327px;
   min-height: 500px;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 1.25rem;
   border: 1px solid var(--text-color-dark);
   background-color: var(--bg-card);
+  box-shadow: 0.5rem 0.5rem 0 0 rgba(0, 0, 0, 1);
 
   &__blog-img {
     border-radius: 0.625rem;
@@ -166,6 +166,9 @@ body {
   &__category {
     @include flex-row-center;
     background-color: var(--color-primary);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    max-width: fit-content;
 
     &__text {
       font-size: 0.875rem;
@@ -186,6 +189,7 @@ body {
     font-weight: 900;
     color: var(--text-color-dark);
     line-height: 150%;
+    cursor: pointer;
 
     &:hover {
       color: var(--color-primary);
@@ -200,6 +204,7 @@ body {
 
   &__author {
     @include flex-align-center;
+    gap: 0.75rem;
 
     &__img {
       width: 32px;
