@@ -8,14 +8,14 @@
 
 :root {
   // Colors - Light Theme
-  --bg-body: hsl(212, 45%, 89%);
+  --bg-body: hsl(47, 88%, 63%);
   --bg-card: hsl(0, 0%, 100%);
-  --color-primary: hsl(216, 95%, 58%);
-  --text-color-primary: hsl(216, 15%, 48%);
-  --text-color-heading: hsl(218, 44%, 22%);
+  --color-primary: hsl(47, 88%, 63%);
+  --text-color-primary: hsl(0, 0%, 42%);
+  --text-color-dark: hsl(0, 0%, 7%);
 
   // Fonts
-  --font-primary: "Outfit", sans-serif;
+  --font-primary: "Figtree", sans-serif;
 
   // Sizes
   --xsmall: 1rem;
@@ -89,12 +89,16 @@
   justify-content: center;
 }
 
-.dark-theme {
-  --bg-body: hsl(213, 43%, 4%);
-  --bg-card: hsl(0, 0%, 13%);
-  --color-primary: hsl(216, 96%, 63%);
-  --text-color-primary: hsl(216, 15%, 60%);
-  --text-color-heading: hsl(218, 43%, 73%);
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 body {
@@ -123,11 +127,91 @@ body {
   min-height: 100%;
   margin-inline: auto;
   background-color: var(--bg-main);
-  border-radius: var(--radius-24);
   padding: var(--space-2);
   margin-bottom: var(--space-3);
 }
 
-.theme-toggle {
-  cursor: pointer;
+.card,
+.card__content {
+  @include flex-column;
+}
+
+.card {
+  gap: var(--space-2);
+  max-width: 384px;
+  min-width: 327px;
+  min-height: 500px;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  border: 1px solid var(--text-color-dark);
+  background-color: var(--bg-card);
+
+  &__blog-img {
+    border-radius: 0.625rem;
+    overflow: hidden;
+    width: 336px;
+    aspect-ratio: 336 / 200;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content {
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  &__category {
+    @include flex-row-center;
+    background-color: var(--color-primary);
+
+    &__text {
+      font-size: 0.875rem;
+      font-weight: 900;
+      color: var(--text-color-dark);
+      line-height: 150%;
+    }
+  }
+
+  &__publish-date {
+    font-size: 0.875rem;
+    line-height: 150%;
+    color: var(--text-color-dark);
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--text-color-dark);
+    line-height: 150%;
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+
+  &__description {
+    font-size: 1rem;
+    line-height: 150%;
+    color: var(--text-color-primary);
+  }
+
+  &__author {
+    @include flex-align-center;
+
+    &__img {
+      width: 32px;
+      height: 32px;
+      border-radius: var(--radius-round);
+    }
+
+    &__name {
+      font-size: 0.875rem;
+      font-weight: 900;
+      line-height: 150%;
+      color: var(--text-color-dark);
+    }
+  }
 }
